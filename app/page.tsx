@@ -1,5 +1,6 @@
 import AboutSection from "@/components/AboutSection"
 import ContactmeSection from "@/components/ContactmeSection"
+import CurriculumVitaeSection from "@/components/CurriculumVitaeSection"
 import HeroSection from "@/components/HeroSection"
 import ProjectsSection from "@/components/ProjectsSection"
 import ServicesSection from "@/components/ServicesSection"
@@ -13,6 +14,7 @@ export default function Home() {
       <ServicesSection />
       <TimelineSection />
       <ProjectsSection />
+      <CurriculumVitaeSection />
       <ContactmeSection />
     </main>
   )
