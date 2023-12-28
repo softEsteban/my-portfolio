@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const ContactmeSection = () => {
   const [formData, setFormData] = useState({
@@ -12,16 +13,34 @@ const ContactmeSection = () => {
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-  };
+  };  
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(formData);
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    // EmailJS parameters
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
+    // Your EmailJS Service ID, Template ID, and User ID
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID || '';
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID || '';
+    const userId = process.env.NEXT_PUBLIC_USER_ID || '';
+
+    // Sending email using EmailJS
+    emailjs.send(serviceId, templateId, templateParams, userId)
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error('Email error:', error);
+      });
   };
 
   return (

@@ -53,7 +53,7 @@ const ProjectsSection = () => {
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col md:flex-row md:space-x-8 lg:space-x-12">
-                  <div className="md:w-1/2">
+                  <div className="md:w-1/2 mb-4">
                     <Link href={project.link}>
                       <Image
                         src={project.image}
