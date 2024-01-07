@@ -7,27 +7,27 @@ const ServicesSection = () => {
     {
       title: "Technological Consultancy",
       description: "Expert guidance on technological solutions and strategies.",
-      icon: "/undraw_interview.png",
+      icon: "/assets/illustrations/undraw_interview.png",
     },
     {
       title: "Requirements Gathering",
       description: "Collecting, analyzing, and documenting project requirements.",
-      icon: "/undraw_filing_system.png",
+      icon: "/assets/illustrations/undraw_filing_system.png",
     },
     {
       title: "Database Development",
       description: "Designing and implementing databases tailored to your needs.",
-      icon: "/undraw_server.png",
+      icon: "/assets/illustrations/undraw_server.png",
     },
     {
       title: "APIs & Integrations Development",
       description: "Creating and integrating APIs for seamless interactions.",
-      icon: "/undraw_design_components.png",
+      icon: "/assets/illustrations/undraw_design_components.png",
     },
     {
       title: "Web Applications Development",
       description: "Building robust and user-friendly web applications.",
-      icon: "/undraw_responsive.png",
+      icon: "/assets/illustrations/undraw_responsive.png",
     },
   ];
 

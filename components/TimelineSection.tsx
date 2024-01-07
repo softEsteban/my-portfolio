@@ -11,7 +11,7 @@ const TimelineSection = () => {
       type: "Full-time Job",
       description: "Assisted a BPO company in automating data extraction and loading processes. Developed bots using Python and Power Automate, and interfaced with IT servers to deploy automations and streamline operational workflows.",
       links: {},
-      logo: "/interactivo_grupo_marktel_logo.jpg",
+      logo: "/assets/logos/interactivo-grupo-marktel-logo.jpg",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const TimelineSection = () => {
       type: "Freelance Project",
       description: "Led a team to create a website showcasing Miella project for Marmato. The website highlighted its history, achievements, and products for Corporación para el Desarrollo de Caldas.",
       links: { label: "Check it out!", url: "http://miella.com.co/" },
-      logo: "/miella-logo.png",
+      logo: "/assets/logos/miella-logo.png",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const TimelineSection = () => {
       type: "Software Competition",
       description: "Participated in the Sena Soft 2023 competition in Pereira, Colombia. Built a Data Warehouse emulating a bank database, designed ETLS and OLAP cube, and projected it onto a Power BI dashboard.",
       links: { label: "Check the LinkedIn post I made about it!", url: "https://www.linkedin.com/posts/softesteban_sena-senasoft2023-qvision-activity-7113503895057772544-Q2M-?utm_source=share&utm_medium=member_desktop" },
-      logo: "/sena-soft.png",
+      logo: "/assets/logos/sena-soft.png",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const TimelineSection = () => {
       type: "Full-time Job",
       description: "Contributed to the entire software development lifecycle, from understanding client needs to leading software developers to meet sprints. Developed databases, web APIs, and integrated applications with services.",
       links: {},
-      logo: "/titanq_ingenieria_logo.jpg",
+      logo: "/assets/logos/titanq-ingenieria-logo.jpg",
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ const TimelineSection = () => {
       type: "Part-time Job",
       description: "Handled BPO data extraction and created process manuals for the team.",
       links: {},
-      logo: "/dataope_logo.jpg",
+      logo: "/assets/logos/dataope-logo.jpg",
     }
 
   ];
@@ -67,7 +67,6 @@ const TimelineSection = () => {
           <div className="flex flex-col">
             {timelineEvents.map((event) => (
               <div key={event.id} className="py-4 md:py-8">
-
                 <div className="flex flex-col bg-white dark:bg-gray-800 shadow-md rounded-2xl overflow-hidden">
                   <div className="p-6 flex flex-col md:flex-row items-center">
                     <Image
@@ -100,8 +99,6 @@ const TimelineSection = () => {
                     </div>
                   </div>
                 </div>
-
-
               </div>
             ))}
           </div>

@@ -22,7 +22,7 @@ const HeroSection = () => {
 
         <div className="md:mt-2 md:w-1/2">
           <Image
-            src={hovered ? '/headshot-with-glasses.png' : '/headshot.png'}
+            src={hovered ? '/assets/images/headshot-with-glasses.png' : '/assets/images/headshot.png'}
             alt=""
             width={325}
             height={325}
@@ -42,13 +42,6 @@ const HeroSection = () => {
             based in Manizales, Colombia. I&#39;m more into solutions than technologies.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-4">
-            {/* <a
-              href="/cv-esteban-toro.pdf"
-              download="CV-Esteban-Toro.pdf"
-              className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 mt-4 md:mt-0"
-            >
-              Download CV
-            </a> */}
             <a href="https://github.com/softEsteban" rel="noreferrer" target="_blank">
               <AiOutlineGithub
                 className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
