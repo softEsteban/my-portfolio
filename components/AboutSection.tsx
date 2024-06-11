@@ -1,9 +1,10 @@
 import React from "react"
 
 const skills = [
+  { skill: "Nestjs" },
   { skill: "Angular" },
+  { skill: "Nextjs" },
   { skill: "React" },
-  { skill: "Next.js" },
   { skill: "CSS" },
   { skill: "TypeScript" },
   { skill: "JavaScript" },
@@ -18,6 +19,8 @@ const skills = [
   { skill: "Git" },
   { skill: "GitHub" },
   { skill: "GitLab" },
+  { skill: "Socket.io" },
+  { skill: "draw.io" },
 ]
 
 const AboutSection = () => {

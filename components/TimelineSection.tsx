@@ -6,12 +6,13 @@ const TimelineSection = () => {
     {
       id: 1,
       date: "Feb. 2022 - Present",
-      title: "Interactivo Grupo Marktel - Data Science and Automation Junior Analyst",
+      title: "Interactivo Grupo Marktel - Data Science and Automation Junior Analyst & Software Engineer",
       subtitle: "Data Science and Automation Junior Analyst",
       type: "Full-time Job",
-      description: "Assisted a BPO company in automating data extraction and loading processes. Developed bots using Python and Power Automate, and interfaced with IT servers to deploy automations and streamline operational workflows.",
+      description: "Assisted a BPO company in automating data extraction and loading processes. Developed bots using Python and Power Automate, and interfaced with IT servers to deploy automations and streamline operational workflows. Work in IT department to build web and automation solutions.",
       links: {},
       logo: "/assets/logos/interactivo-grupo-marktel-logo.jpg",
+      tags: ["Python", "Power Automate", "Data Extraction", "Speech Analytics", "Automation design and development", "Nextjs"]
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ const TimelineSection = () => {
       description: "Led a team to create a website showcasing Miella project for Marmato. The website highlighted its history, achievements, and products for Corporación para el Desarrollo de Caldas.",
       links: { label: "Check it out!", url: "http://miella.com.co/" },
       logo: "/assets/logos/miella-logo.png",
+      tags: ["Leadership", "Web Development", "Project Management"]
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ const TimelineSection = () => {
       description: "Participated in the Sena Soft 2023 competition in Pereira, Colombia. Built a Data Warehouse emulating a bank database, designed ETLS and OLAP cube, and projected it onto a Power BI dashboard.",
       links: { label: "Check the LinkedIn post I made about it!", url: "https://www.linkedin.com/posts/softesteban_sena-senasoft2023-qvision-activity-7113503895057772544-Q2M-?utm_source=share&utm_medium=member_desktop" },
       logo: "/assets/logos/sena-soft.png",
+      tags: ["Data Engineering", "ETL", "Power BI", "OLAP", "SQL Server"]
     },
     {
       id: 4,
@@ -42,6 +45,7 @@ const TimelineSection = () => {
       description: "Contributed to the entire software development lifecycle, from understanding client needs to leading software developers to meet sprints. Developed databases, web APIs, and integrated applications with services.",
       links: {},
       logo: "/assets/logos/titanq-ingenieria-logo.jpg",
+      tags: ["Fullstack Development", "Team Leadership", "APIs", "Angular", "Nextjs", ".NET Cores", "PostegreSQL"]
     },
     {
       id: 5,
@@ -52,8 +56,8 @@ const TimelineSection = () => {
       description: "Handled BPO data extraction and created process manuals for the team.",
       links: {},
       logo: "/assets/logos/dataope-logo.jpg",
+      tags: ["Data Extraction", "Process Documentation", "Consulting"]
     }
-
   ];
 
   return (
@@ -96,6 +100,13 @@ const TimelineSection = () => {
                           {event.links.label || "Check it out!"}
                         </a>
                       )}
+                      <div className="mt-2">
+                        {event.tags.map((tag, index) => (
+                          <span key={index} className="text-sm bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-full px-2 py-1 mr-2">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>

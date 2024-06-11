@@ -7,6 +7,19 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const projects = [
   {
+    name: "CV Builder",
+    description:
+      "An Angular-based web app generating PDF CVs from form data, leveraging Angular and Bootstrap.",
+    image: "/assets/images/cv-builder.png",
+    current: true,
+    github: "https://github.com/softEsteban/cv-builder-pdfmake",
+    link: "https://softesteban.github.io/cv-builder-pdfmake/",
+    technologies: [
+      "/assets/logos/angular-logo.png",
+      "/assets/logos/bootstrap-logo.png"
+    ]
+  },
+  {
     name: "Finances APP",
     description:
       "Tired of managing finances via Excel, I developed an app with Next.js and MongoDB. An ongoing project for efficient personal finance tracking.",
@@ -75,19 +88,6 @@ const projects = [
     ]
   },
   {
-    name: "CV Builder",
-    description:
-      "An Angular-based web app generating PDF CVs from form data, leveraging Angular and Bootstrap.",
-    image: "/assets/images/cv-builder.png",
-    current: false,
-    github: "https://github.com/softEsteban/cv-builder-pdfmake",
-    link: "https://softesteban.github.io/cv-builder-pdfmake/",
-    technologies: [
-      "/assets/logos/angular-logo.png",
-      "/assets/logos/bootstrap-logo.png"
-    ]
-  },
-  {
     name: "Computrabajo Webscraper",
     description:
       "Python-based scraper for extracting Computrabajo openings, saving time by automating the extraction process.",
@@ -118,7 +118,7 @@ const ProjectsSection = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col md:flex-row md:space-x-8 lg:space-x-12">
                   <div className="md:w-1/2 mb-4">
-                    <Link href={project.link}>
+                    <Link href={project.link} target="_blank" >
                       <Image
                         src={project.image}
                         alt=""
